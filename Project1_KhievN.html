@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US" />
+<head>
+  <title>Project 1 - Nelson Khiev</title>
+  <style>
+    body {
+        font-family: 'Helvetica neue';
+        font-size: 13px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .table {
+        margin: 0 auto;
+        width: 720px;
+        text-align: center;
+        color: black;
+        border: 1px solid rgb(0, 38, 88);
+      }
+
+      p {
+        font-weight: 300;
+      }
+
+      input {
+        text-align: center;
+      }
+      
+      th, td {
+        width: 50px;
+        height: 25px;
+        background-color: #C3DAF9;
+      }
+
+      td:hover {
+        background-color: #eee;
+      }
+
+      #header, #instructions {
+        width: 720px;
+        text-align: left;
+        margin: 0 auto;
+      }
+  </style>
+</head>
+<script>
+  // Global variables
+  var tblArray = [];
+  var rcArray;
+  var pattern = /[:|\(|\)]/;
+  var sum = 0;
+  var sumTotal = 0;
+
+  // A function builds the table based on 20 rows and 10 columns
+  function buildTable() {
+    var divHTML = "<table border='1' cellpadding='0' cellspacing='0' class='table'>";
+    divHTML += "<tr><th></th>";
+
+    for (var j = 0; j < 10; j++) {
+      divHTML += "<th style='color: white; background-color: rgb(0, 38, 88);'>" + String.fromCharCode(j + 65) + "</th>";
+    }
+
+    divHTML += "</tr>";
+    for (var i = 1; i <= 20; i++) {
+      divHTML += "<tr>";
+      divHTML += "<td style='color: white; background-color: rgb(0, 38, 88); id='" + i + "_0'>" + i + "</td>";
+
+      for (var j = 1; j <= 10; j++) {
+        divHTML += "<td id='" + i + "_" + j + "'onclick='clickCell(this)'></td>";
+      }
+      divHTML += "</tr>";
+    }
+    divHTML += "</table>";
+    document.getElementById('spreadsheet_area').innerHTML = divHTML;
+    populateArray();
+  }
+
+  // A function to run when user clicks a cell
+  function clickCell(ref) {
+    rcArray = ref.id.split('_');
+    var column = ref.cellIndex;
+    var row = ref.parentNode.rowIndex;
+    var letter = "";
+
+    if (column == 1) {
+      letter = "A";
+    } else if (column == 2) {
+      letter = "B";
+    } else if (column == 3) {
+      letter = "C";
+    }else if (column == 4) {
+      letter = "D";
+    }else if (column == 5) {
+      letter = "E";
+    }else if (column == 6) {
+      letter = "F";
+    }else if (column == 7) {
+      letter = "G";
+    }else if (column == 8) {
+      letter = "H";
+    }else if (column == 9) {
+      letter = "I";
+    }else {
+      letter = "J";
+    }
+
+    var cell = letter + "" + row;
+    document.getElementById("cellValue").value = cell;
+    console.log(cell);
+  }
+
+  // find out what type of browser we have
+  var isIE11 = ((window.navigator.userAgent).indexOf("Trident") !== -1);
+  var isChrome = ((window.navigator.userAgent).indexOf("Chrome") !== -1);
+  var isSafari = ((window.navigator.userAgent).indexOf("Safari") !== -1);
+
+  var filterSet = "1234567890ABCDEFGHIJSUM=().:";
+
+  // Cross browser code to determine when the Enter key is hit
+  function filter(ref) {
+    if (window.event.keyCode === 13) {
+      tblArray[rcArray[0]][rcArray[1]] = (cellInput.value).toUpperCase();
+      if (isNaN(parseFloat(cellInput.value))) {
+        sum = getFormula();
+        document.getElementById(rcArray[0] + "_" + rcArray[1]).innerHTML = sum;
+      } else {
+        document.getElementById(rcArray[0] + "_" + rcArray[1]).innerHTML = tblArray[rcArray[0]][rcArray[1]];
+        reCalculate();
+      }
+    }
+    else if (!nCharOK(window.event.keyCode)) {
+      window.event.preventDefault();
+    }
+  }
+
+  // A function to recalculate. The function will traverse the 2D array looking for formulas
+  // and then recalculate cell values.
+  function reCalculate() {
+    for (var i = 1; i <= 20; i++) {
+      for (var j = 1; j <= 10; j++) {
+        if (tblArray[i][j].indexOf("=SUM") !== -1) {
+          var formula = tblArray[i][j];
+          var formula_breakdown = formula.split(pattern);
+
+          sum = calculateCell(formula_breakdown);
+
+          var cellId = i + "_" + j;
+          var ref = document.getElementById(cellId);
+          ref.innerHTML = sum;
+        }
+      }
+    }
+  }
+
+  // A function to get a formula. The function determines if a user entered a formula and
+  // returns an array with formula components.
+  function getFormula() {
+    var formula_breakdown = tblArray[rcArray[0]][rcArray[1]].split(pattern);
+    return calculateCell(formula_breakdown);
+  }
+
+  // A function that when it finds a formula, it parses it to find the from (row and column)
+  // and the to (row and column), and then performs the calculation by getting all the numeric 
+  // values from the 2d array and generating a total parse the formula with a call to getFormula.
+  // Then, the function takes the calculated total and inserts it into the HTML table.
+  function calculateCell(formula) {
+    var fromColumn = formula[1].substr(0, 1);
+    var fromRow = formula[1].substr(1, formula[1].length - 1);
+
+    var toColumn = formula[2].substr(0, 1);
+    var toRow = formula[2].substr(1, formula[2].length - 1);
+
+    var fromColumnIndex = (fromColumn.charCodeAt(0) - 65) + 1;
+    var toColumnIndex = (toColumn.charCodeAt(0) - 65) + 1;
+
+    for (var i = fromRow; i <= toRow; i++) {
+      for (var j = fromColumnIndex; j <= toColumnIndex; j++) {
+        sumTotal += parseInt(tblArray[i][j]);
+      }
+    }
+    return sumTotal;
+  }
+
+  // A function to filter accepted characters
+  function nCharOK(c) {
+    var ch = (String.fromCharCode(c));
+    ch = ch.toUpperCase();
+
+    if (filterSet.indexOf(ch) !== -1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // A function to clear the table's data
+  function clearData() {
+    document.getElementById("cellInput").value = "";
+    document.getElementById("cellValue").value = "";
+    buildTable();
+    populateArray();
+  }
+
+  // A function to populate an array to hold data and creating a 2D JS array.
+  function populateArray() {
+    for (var i = 1; i <= 20; i++) {
+      tblArray[i] = [];
+      for (var j = 1; j <= 10; j++) {
+        tblArray[i][j] = '';
+      }
+    }
+  }
+</script>
+<body onload="buildTable();">
+  <div id="header">
+    <h2>Project 1 - Nelson Khiev</h2>
+  </div>
+  <form id="frmSpreadsheet" onSubmit="return false">
+    <div id="spreadsheet_area"></div>
+    <div id="instructions">
+      <p>
+        1. Select a <b>CELL</b>.<br>
+        2. Enter the <b>VALUE</b> or the <b>=SUM(Ax:By)</b> formula, if there are at least two cells and where <b>x</b> and <b>y</b> are integers.<br>
+        3. Press <b>ENTER</b> when you are done.<br>
+        4. To enter a new cell, click a new location and enter a new value in the input box.
+      </p>
+      <input type="text" id="cellValue" placeholder="Cell location" >
+      <input type="text" id="cellInput" placeholder="Enter cell value here" onkeypress="filter(this);"><br><br>
+      <button type="button" id="clear" onclick="clearData();">Clear</button>
+    </div>
+  </form>
+</body>
+</html>
