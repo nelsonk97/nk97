@@ -1,0 +1,175 @@
+ <!--
+    Just as a disclaimer, this is purely just a simulation. My LAMP stack isn't working properly on my new laptop
+    but I have experience creating PHP forms that vary in the number of pages. My GitHub has exemplar LAMP projects
+    where I have demonstrated this. :)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Internship Signup Form</title>
+    <meta name="description" content="Internship Signup Form">
+    <meta name="author" content="Nelson Khiev">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            background-color: #282828;
+            color: #fff;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 65px;
+            text-transform: uppercase;
+            text-align: left;
+            margin-bottom: 2.5%;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 35px;
+            text-align: left;
+        }
+
+        p {
+            font-family: 'Merriweather Regular', serif;
+            font-size: 20px;
+        }
+
+        input, select {
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            display: inline;
+            padding-left: 20px;
+            width: 50%;
+            height: 40px;
+            color: #797979;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+
+        select {
+            margin-left: 10px;
+        }
+
+        input, select, option {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+        }
+
+        button {
+            margin: 0 auto;
+            font-family: 'Merriweather Bold', serif;
+            font-size: 16px;
+            width: 100%;
+            background-color: #D02035;
+            color: #fff;
+            border-style: none;
+            height: 40px;
+            text-transform: capitalize;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        #container {
+            height: 760px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #container-content {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        #container-input {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+
+        #container-decorative {
+            height: 8px;
+            background-color: #D02035;
+            width: 27%;
+            margin-bottom: 20px;
+        }
+
+        #container-content, #container-input {
+            margin-bottom: 28px;
+        }
+
+        span {
+            font-size: 5px;
+            vertical-align: 50%;
+        }
+
+        #container-error {
+            font-family: 'Merriweather Regular';
+            font-size: 12px;
+        }
+
+        #container-input-final {
+            display: none;
+            position: absolute;
+            top: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container-content">
+            <h1>Internship Signup Form</h1>
+            <div id="container-decorative"></div>
+            <p id="container-text">Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital <br>Marketing Internship at Northern.</p>
+            <div id="container-error"></div>
+            <div id="container-input">
+                <!--<div id="container-error"></div>-->
+                <input id="container-email" placeholder="Your Email Address *"/>
+                <select type="dropdown" id="container-dropdown">
+                    <option value="" disabled selected>Your Interests</option>
+                    <option value="Development">Development</option>
+                </select>
+            </div>
+            <div id="container-input-final">
+                <p id="container-text-final">
+                    <h2>Thanks for your interest!</h2>
+                    We will review your application and contact you for additional information should your background<br>and experience meet the requirements of one of our openings.
+                </p>
+            </div>
+            <button id="container-button" onclick="validate();">Sign up now <span>&#9654;</span></button>
+        </div>
+    </div>
+</body>
+<script>
+    function validate() {
+        var email = document.getElementById("container-email").value;
+        var select = document.getElementById("container-dropdown").value;
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+            console.log(email + " | " + select);
+            document.getElementById("container-button").innerHTML = "Submitting...";
+            setTimeout(function() { 
+                document.getElementById("container-input").innerHTML = "";
+                document.getElementById("container-text").style.display = "none";
+                document.getElementById("container-button").style.display = "none";
+                document.getElementById("container-input-final").style.display = "block";
+             }, 2000);
+        } else {
+            document.getElementById("container-error").innerHTML = "Please enter a valid email address.";
+        }
+    }
+</script>
+</html>
