@@ -4,3 +4,7 @@ In this reposititory, I'll be sharing my work from throughout the duration of my
 Unfortunately, during the second half of 2019, my Mac had failed and my backups were corrupted. Everything from my first year in my program had been lost.
 
 Work in this repo will be my most recently completed projects and exemplars.
+
+Addition projects not listed here:
+https://github.com/nelsonk97/business
+https://github.com/nelsonk97/application-project
