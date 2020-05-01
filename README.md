@@ -6,5 +6,4 @@ Unfortunately, during the second half of 2019, my Mac had failed and my backups 
 Work in this repo will be my most recently completed projects and exemplars.
 
 Addition projects not listed here:<br />
-https://github.com/nelsonk97/business<br />
 https://github.com/nelsonk97/application-project
