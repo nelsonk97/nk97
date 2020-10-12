@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>p2</h1>
+    <div class="container">
+        <h3>enter your bill below and press calculate</h3>
+        <input id="bill" placeholder="enter your bill">
+        <input id="num_people" placeholder="enter how many people">
+        <select id="select">
+      <option value="" disabled selected>select your province</option>
+      <option value="ab">alberta</option>
+      <option value="bc">british columbia</option>
+      <option value="mb">manitoba</option>
+      <option value="nb">new brunswick</option>
+      <option value="nl">newfoundland & labrador</option>
+      <option value="nt">northwest territories</option>
+      <option value="ns">nova scotia</option>
+      <option value="nu">nunavut</option>
+      <option value="on">ontario</option>
+      <option value="pe">prince edward island</option>
+      <option value="qu">quebec</option>
+      <option value="sk">saskatchewan</option>
+      <option value="yk">yukon</option>
+    </select>
+        <br><br>
+        <button>calculate</button>
+        <br><br>
+        <input id="output"></input>
+    </div>
+</body>
+<script>
+    const AB = 1.005;
+    const BC = 1.12;
+    const MB = 1.12;
+    const NB = 1.15;
+    const NL = 1.15;
+    const NT = 1.005;
+    const NS = 1.15;
+    const NU = 1.005;
+    const ON = 1.13;
+    const PE = 1.15;
+    const QU = 1.14975;
+    const SK = 1.11;
+    const YK = 1.005;
+
+    function calculate() {
+        let bill = document.getElementById("bill").value;
+        let num_people = document.getElementById("num_people").value;
+        let p_t = document.getElementById("select").value;
+        let price = 0;
+        let tax = 0;
+
+        bill = parseFloat(bill);
+        tax = parseFloat(tax);
+        num_people = parseInt(num_people);
+
+        if (p_t == "ab") {
+            tax = bill * AB;
+        } else if (p_t == "bc") {
+            tax = bill * BC;
+        } else if (p_t == "mb") {
+            tax = bill * MB;
+        } else if (p_t == "nb") {
+            tax = bill * NB;
+        } else if (p_t == "nl") {
+            tax = bill * NL;
+        } else if (p_t == "nt") {
+            tax = bill * NT;
+        } else if (p_t == "ns") {
+            tax = bill * NS;
+        } else if (p_t == "nu") {
+            tax = bill * NU;
+        } else if (p_t == "on") {
+            tax = bill * ON;
+        } else if (p_t == "pe") {
+            tax = bill * PE;
+        } else if (p_t == "qu") {
+            tax = bill * QU;
+        } else if (p_t == "sk") {
+            tax = bill * SK;
+        } else if (p_t == "yk") {
+            tax = bill * YK;
+        } else {
+            document.getElementById('output').value = "error! please try again.";
+        }
+        price += tax;
+        price = price / num_people;
+        document.getElementById('output').value = "$" + price.toFixed(2) + " each in " + p_t.toUpperCase();
+    }
+    var btn = document.querySelector("button");
+    btn.addEventListener("click", calculate);
+</script>
+
+</html>

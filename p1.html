@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>p1</h1>
+    <div class="container">
+        <h3>enter your details below and press calculate</h3>
+        <input placeholder="enter your hourly wage">
+        <br><br>
+        <button>calculate</button>
+        <br><br>
+        <input id="output"></input>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector("button");
+    btn.addEventListener("click", calculate);
+
+    function calculate() {
+        let wage = document.querySelector("input").value;
+        let calculation = wage * 40 * 52;
+        calculation = parseFloat(calculation);
+        document.getElementById('output').value = "$" + calculation + " before taxes";
+    }
+</script>
+
+</html>

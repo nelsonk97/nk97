@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p3</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+    </style>
+</head>
+
+<body onload="display()">
+    <h1>p3</h1>
+    <h2>client-side database</h2>
+    <input>
+    <button id="post" onclick="post();">post data</button>
+    <button id="clear" onclick="wipe();">clear data</button>
+    <button id="view" onclick="view();">view data in console</button>
+    <br><br>
+    <div id="output"></div>
+</body>
+<script>
+    let i = 0;
+
+    function post() {
+        i++;
+        let data = document.querySelector("input").value;
+        localStorage.setItem(i, data);
+        document.querySelector("div").innerHTML += i + ". " + data.charAt(0).toUpperCase() + data.slice(1) + "<br>";
+    }
+
+    function wipe() {
+        i = 0;
+        localStorage.clear();
+        document.querySelector("div").innerHTML = "";
+        console.clear();
+        alert('All data deleted!');
+    }
+
+    function view() {
+        for (let j = 0; j < localStorage.length; j++) {
+            let key = localStorage.key(j);
+            console.log((j + 1) + ". " + localStorage.getItem(key).charAt(0).toUpperCase() + localStorage.getItem(key).slice(1));
+        }
+    }
+
+    function display() {
+        for (let j = 0; j < localStorage.length; j++) {
+            let key = localStorage.key(j);
+            document.querySelector("div").innerHTML += ((j + 1) + ". " + localStorage.getItem(key).charAt(0).toUpperCase() + localStorage.getItem(key).slice(1)) + "<br>";
+        }
+    }
+</script>
+
+</html>

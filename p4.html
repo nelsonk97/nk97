@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+        
+        input {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>p4</h1>
+    <h2>text to binary conversion app</h2>
+    <h3>enter your text and press convert</h3>
+    <input id="user" placeholder="The quick brown fox jumped over the lazy dog." />
+    <br><br>
+    <input id="computer" />
+    <br><br>
+    <button>Convert</button>
+</body>
+<script>
+    function convert() {
+        let input = document.getElementById("user").value;
+        let output = document.getElementById("computer");
+        output.value = "";
+        for (i = 0; i < input.length; i++) {
+            output.value += input[i].charCodeAt(0).toString(2) + " ";
+        }
+    }
+
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', convert);
+</script>
+
+</html>
