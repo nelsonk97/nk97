@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>p5</h1>
+    <input id="user_name" placeholder="enter username">
+    <input id="pass_word" placeholder="enter password">
+    <button onclick="signup();">sign up</button>
+    <button onclick="login();">login</button>
+    <button onclick="checkLS();">check localStorage</button>
+    <button onclick="clearLS();">clear localStorage</button>
+    <div></div>
+</body>
+
+<script>
+    let i = 0;
+
+    function signup() {
+        let username = document.getElementById("user_name").value;
+        let password = document.getElementById("pass_word").value;
+        localStorage.setItem(username, password);
+        alert("registered!");
+    }
+
+    function login() {
+        let username = document.getElementById("user_name").value;
+        let password = document.getElementById("pass_word").value;
+
+        for (let j = 0; j < localStorage.length; j++) {
+            let key = localStorage.key(j);
+            if (username == key && password == localStorage.getItem(key)) {
+                console.log("username: " + key);
+                console.log("password: " + localStorage.getItem(key));
+                alert('login success!');
+            }
+        }
+    }
+
+    function checkLS() {
+        console.log(localStorage);
+    }
+
+    function clearLS() {
+        localStorage.clear();
+    }
+</script>
+
+</html>

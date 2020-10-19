@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8</title>
+    <style>
+        * {
+            font-family: "Helvetica";
+        }
+    </style>
+</head>
+
+<body onload="init();">
+    <h1>p8</h1>
+    <div class="selection">
+        <h2>What would you like to convert?</h2>
+        <button id="decSelect" onclick="chooseDec()">Decimal to Binary</button>
+        <button id="binSelect" onclick="chooseBin()">Binary to Decimal</button>
+    </div>
+    <div id="decBin">
+        <h2>Decimal to Binary</h2>
+        <input id="decimal">
+        <button onclick="convertToBinary()">Convert</button>
+    </div>
+    <div id="binDec">
+        <h2>Binary to Decimal</h2>
+        <input id="binary">
+        <button onclick="convertToDecimal()">Convert</button>
+    </div>
+</body>
+
+<script>
+    let pickBin = document.getElementById("binSelect");
+    let pickDec = document.getElementById("decSelect");
+
+    function init() {
+        document.getElementById("binDec").style.display = "none";
+        document.getElementById("decBin").style.display = "none";
+    }
+
+    function chooseBin() {
+        document.getElementById("binDec").style.display = "block";
+        document.getElementById("decBin").style.display = "none";
+    }
+
+    function convertToBinary() {
+        let num = document.getElementById("decimal").value;
+        let bin = (+num).toString(2);
+        document.getElementById("decimal").value = bin;
+    }
+
+    function chooseDec() {
+        document.getElementById("decBin").style.display = "block";
+        document.getElementById("binDec").style.display = "none";
+    }
+
+    function convertToDecimal() {
+        let num = document.getElementById("binary").value;
+        let dec = (num >>> 0).toString(2);
+        document.getElementById("binary").value = dec;
+    }
+</script>
+
+</html>
