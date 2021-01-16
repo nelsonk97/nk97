@@ -1,0 +1,210 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#header {
+  position:fixed;
+  height: 52px;
+  display:block;
+  width: 100%;
+  z-index:2;
+  text-align:center;
+  padding: 10px 0 0 20px;
+}
+
+/* Navigation */
+.logo {
+  width: 94px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  font-size: 15px;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+}
+
+nav {
+  position: f;
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.nav-links {
+  padding-left: 140px;
+}
+
+/* Content */
+.s1 {
+  background: url("../img/Desktop-ModelY.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.s2 {
+  background: url("../img/Desktop-ModelX.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.s3 {
+  background: url("../img/Desktop-Model3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.s4 {
+  background: url("../img/Desktop-ModelS.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.s5 {
+  background: url("../img/Desktop-SolarPanels.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.s6 {
+  background: url("../img/Desktop-Accessories.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section.content {
+  text-align: center;
+  bottom: 30%;
+}
+
+.content-title {
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(34, 34, 34);
+}
+
+.content-tagline {
+  color: rgb(59, 59, 59);
+  font-weight: 500;
+}
+
+.content-link {
+  border-bottom: 1.35px solid;
+}
+
+.content-buttons {
+  position: fixed;
+  top: 87%;
+  right: 40%;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  top: 122%;
+  left: 49.2%;
+  font-size: 30px;
+}
+
+button {
+  font-family: 'Raleway', 'sans serif';
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(22, 22, 22, 0.35);
+  border-width: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  opacity: .8;
+  cursor: pointer;
+}
+
+button:last-child {
+  font-weight: 500;
+  background-color: #fff;
+  color: #000;
+  margin-left: 18px;
+}
+
+.content-buttons-2, .content-buttons-3 {
+  position: fixed;
+  top: 80%;
+  right: 45%;
+  background-color: #000;
+  opacity: 1;
+}
+
+/* Footer */
+.footer-links {
+  position: absolute;
+  top: 99.5%;
+  left: 40%;
+}
+
+.footer-links li {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgb(70, 69, 69);
+}
+
+@media(max-width: 640px) {
+  .s1 {
+    background: url("../img/Mobile-ModelY.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .s2 {
+    background: url("../img/Mobile-ModelX.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .s3 {
+    background: url("../img/Mobile-Model3.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .s4 {
+    background: url("../img/Mobile-ModelS.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .s5 {
+    background: url("../img/Mobile-SolarPanels.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .s6 {
+    background: url("../img/Mobile-Accessories.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+}
