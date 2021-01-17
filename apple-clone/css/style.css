@@ -1,0 +1,119 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  height: 52px;
+  display: block;
+  width: 100%;
+  background: #333;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+  top: 0px;
+}
+
+nav ul a li {
+  font-weight: 300;
+  font-size: 14px;
+  display: inline;
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+nav ul a li:hover {
+  color: #fff;
+}
+
+.nav-content {
+  max-width: 41%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -9px;
+  cursor: pointer;
+}
+
+.fab.fa-apple {
+  font-size: 20px;
+}
+
+.fas.fa-search,
+.fas.fa-shopping-bag {
+  font-size: 16px;
+}
+
+/* Content */
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 12px;
+  height: 100vh;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  height: 58.5vh;
+  width: 100%;
+}
+
+.iphone-12-description {
+  display: absolute;
+  margin-top: 3.5%;
+  width: 10%;
+}
+
+#phone-text {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#phone-tagline {
+  font-size: 28px;
+}
+
+#phone-price {
+  font-size: 16px;
+  color: #86868B;
+}
+
+#phone-text,
+#phone-tagline,
+#phone-price {
+  margin-bottom: 5px;
+}
+
+.phone-description-buttons {
+  margin-top: 20px;
+  display: flex;
+  font-size: 20px;
+  color: #0066CC;
+}
+
+.fas.fa-chevron-right {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.iphone-12 {
+  background: url('../img/iphone12-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.iphone12-pro {
+  background: url('../img/iphone12-pro-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
