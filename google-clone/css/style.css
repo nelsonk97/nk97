@@ -61,7 +61,10 @@ input {
   outline: none;
   padding-left: 40px;
   position: relative;
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0, 0.8);
+}
+
+input:focus {
+  box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }
 
 .fas.fa-search {
