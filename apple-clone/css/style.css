@@ -20,7 +20,7 @@
 }
 
 nav ul a li {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   display: inline;
   text-decoration: none;
@@ -97,6 +97,12 @@ section {
   display: flex;
   font-size: 20px;
   color: #0066CC;
+}
+
+#learn:hover,
+#buy:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .fas.fa-chevron-right {
