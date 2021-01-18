@@ -129,7 +129,9 @@ section {
 
 .fas.fa-chevron-right {
   font-size: 12px;
-  margin-left: 10px;
+  position: relative;
+  left: 9px;
+  bottom: 1px;
 }
 
 .iphone-12 {
