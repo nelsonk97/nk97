@@ -66,36 +66,58 @@ section {
   width: 100%;
 }
 
-.iphone-12-description {
+.iphone-12-description,
+.iphone-12-pro-description {
   display: absolute;
+  margin-left: 44.5%;
+}
+
+.iphone-12-description {
   margin-top: 3.5%;
   width: 10%;
 }
 
-#phone-text {
+#iphone-12-text,
+#iphone-12-pro-text {
   font-size: 48px;
   font-weight: 600;
 }
 
-#phone-tagline {
+#iphone-12-pro-text {
+  font-weight: 500;
+}
+
+#iphone-12-tagline,
+#iphone-12-pro-tagline {
   font-size: 28px;
 }
 
-#phone-price {
+#iphone-12-price,
+#iphone-12-pro-price {
   font-size: 16px;
   color: #86868B;
 }
 
-#phone-text,
-#phone-tagline,
-#phone-price {
+#iphone-12-text,
+#iphone-12-tagline,
+#iphone-12-price,
+#iphone-12-pro-text,
+#iphone-12-pro-tagline,
+#iphone-12-pro-price {
   margin-bottom: 5px;
 }
 
-.phone-description-buttons {
-  margin-top: 20px;
+.iphone-12-pro-description {
+  margin-top: 2.5%;
+  width: 12%;
+  color: #fff;
+}
+
+.iphone-12-description-buttons,
+.iphone-12-pro-description-buttons {
   display: flex;
   font-size: 20px;
+  margin-top: 20px;
   color: #0066CC;
 }
 
@@ -117,7 +139,7 @@ section {
   background-size: cover;
 }
 
-.iphone12-pro {
+.iphone-12-pro {
   background: url('../img/iphone12-pro-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
