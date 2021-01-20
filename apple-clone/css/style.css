@@ -142,7 +142,8 @@ section {
 }
 
 #learn:hover,
-#buy:hover {
+#buy:hover,
+#try:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -268,7 +269,7 @@ section {
 }
 
 .footer-line-break {
-  width: 96.6%;
+  width: 96.9%;
   height: 0.5px;
   background-color: #CCCCCC;
 }
@@ -277,11 +278,52 @@ span {
   color: #565659;
 }
 
-span:hover {
+span:hover,
+ul a li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-#footer-text {
-  padding-top: 10px;
+ul a li, li{
+  list-style: none;
+  font-size: 12.5px;
+  color: #58585A;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#footer-list-header {
+  font-weight: 500;
+  color: #1D1D1F;
+}
+
+#footer-text, 
+.footer-middle {
+  margin-top: 15px;
+}
+
+.footer-list {
+  margin-left:15px;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#footer-middle-tagline {
+  color: #99999D;
+  font-size: 12.5px;
+  margin-top: 25px;
+  margin-left:15px;
+  margin-bottom: 15px;
+}
+
+#tagline-link {
+ color: #1673D0;
+}
+
+#tagline-link:hover {
+  text-decoration: underline;
 }
