@@ -1,0 +1,100 @@
+:root {
+  --td-color: #008A00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+#header {
+  position: fixed;
+  height: 106px;
+  display: block;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  top: 0px;
+  font-size: 12px;
+}
+
+.nav-top {
+  height: 36px;
+  width: 100%;
+  background-color: var(--td-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-top ul {
+  list-style: none;
+  padding-right: 600px;
+}
+
+.nav-top ul li {
+  display: inline;
+  padding-right: 35px;
+}
+
+.nav-top ul li:first-child {
+  font-weight: 800;
+}
+
+.nav-top ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.nav-bottom {
+  color: var(--td-color);
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+  font-weight: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.nav-bottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 600px;
+}
+
+.nav-bottom ul {
+  list-style: none;
+}
+
+.nav-bottom ul li {
+  display: inline;
+  padding-right: 35px;
+  font-weight: 700;
+}
+
+#td-logo {
+  width: 70%;
+  padding-left: 40px;
+  padding-top: 4px;
+}
+
+.fas.fa-chevron-down {
+  font-size: 8.5px;
+  margin-left: -20px;
+  margin-right: 35px;
+  margin-top: 2px;
+}
+
+.nav-bottom ul li:hover {
+  color: #000;
+  cursor: pointer;
+}
