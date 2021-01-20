@@ -50,7 +50,7 @@ nav ul a li:hover {
   font-size: 16px;
 }
 
-/* Content */
+/* Grid 1 */
 .grid {
   display: grid;
   grid-template-columns: auto;
@@ -89,7 +89,7 @@ section {
 
 #iphone-12-tagline,
 #iphone-12-pro-tagline,
-#apple-fitness-tagline{
+#apple-fitness-tagline {
   font-size: 28px;
 }
 
@@ -173,12 +173,85 @@ section {
 .apple-fitness {
   background: url('../img/fitness-1.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: 50%;
   background-color: #FBFBFD;
-  height: 72vh;
+  height: 700px;
 }
 
 #apple-fitness-logo {
   width: 10%;
+}
+
+/* Grid 2 */
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 11.5px;
+  height: auto;
+  margin-top: 62.7vh;
+  padding: 11.5px;
+}
+
+.apple-watch,
+.ipad-air,
+.macbook-air,
+.apple-one,
+.airpods,
+.apple-tv-plus {
+  height: 577px;
+  width: 100%;
+}
+
+.apple-watch {
+  background: url('../img/apple-watch-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 20%;
+  background-color: #000;
+}
+
+.ipad-air {
+  background: url('../img/ipad-air-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 95%;
+  background-color: #FBFBFD;
+}
+
+.macbook-air {
+  background: url('../img/macbook-air-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 95%;
+  background-color: #000;
+}
+
+.apple-one {
+  background: url('../img/apple-one-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 40%;
+  background-color: #FBFBFD;
+}
+
+.airpods {
+  background: url('../img/airpods-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 40%;
+  background-color: #FBFBFD;
+}
+
+.apple-tv-plus {
+  background: url('../img/apple-tv-1.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  background-color: #FBFBFD;
+}
+
+.footer {
+  height: 770px;
+  background-color: #FBFBFD;
 }
