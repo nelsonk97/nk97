@@ -69,7 +69,7 @@ section {
 .iphone-12-description,
 .iphone-12-pro-description {
   display: absolute;
-  margin-left: 44.5%;
+  margin-left: 44.6%;
 }
 
 .iphone-12-description {
@@ -88,7 +88,8 @@ section {
 }
 
 #iphone-12-tagline,
-#iphone-12-pro-tagline {
+#iphone-12-pro-tagline,
+#apple-fitness-tagline{
   font-size: 28px;
 }
 
@@ -111,14 +112,33 @@ section {
   margin-top: 2.5%;
   width: 12%;
   color: #fff;
+  margin-left: 43.5%;
+}
+
+.apple-fitness-description {
+  margin-top: 2.5%;
+  margin-right: 0.5%;
 }
 
 .iphone-12-description-buttons,
-.iphone-12-pro-description-buttons {
+.iphone-12-pro-description-buttons,
+.apple-fitness-description-buttons {
   display: flex;
   font-size: 20px;
   margin-top: 20px;
   color: #0066CC;
+}
+
+.iphone-12-description-buttons {
+  margin-right: 4%;
+}
+
+.iphone-12-pro-description-buttons {
+  width: 80%;
+}
+
+.apple-fitness-description-buttons {
+  width: 13%;
 }
 
 #learn:hover,
@@ -139,6 +159,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 55vh;
 }
 
 .iphone-12-pro {
@@ -146,4 +167,18 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 52vh;
+}
+
+.apple-fitness {
+  background: url('../img/fitness-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-color: #FBFBFD;
+  height: 72vh;
+}
+
+#apple-fitness-logo {
+  width: 10%;
 }
