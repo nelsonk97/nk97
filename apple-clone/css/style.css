@@ -87,13 +87,22 @@ section {
   font-weight: 500;
 }
 
+#ipad-air-text,#macbook-air-text {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#macbook-air-text {
+  color: #fff;
+}
+
 #iphone-12-tagline,
 #iphone-12-pro-tagline,
 #apple-fitness-tagline {
   font-size: 28px;
 }
 
-#apple-watch-tagline {
+#apple-watch-tagline, #ipad-air-tagline {
   font-size: 20px;
 }
 
@@ -119,15 +128,20 @@ section {
   margin-left: 43%;
 }
 
-.apple-fitness-description {
-  margin-top: 2.5%;
+.apple-fitness-description,
+.apple-watch-description,
+.ipad-air-description,
+.macbook-air-description {
+  margin-top: 4.5%;
   margin-right: 0.5%;
 }
 
 .iphone-12-description-buttons,
 .iphone-12-pro-description-buttons,
 .apple-fitness-description-buttons,
-.apple-watch-description-buttons {
+.apple-watch-description-buttons,
+.ipad-air-description-buttons,
+.macbook-air-description-buttons {
   display: flex;
   font-size: 20px;
   margin-top: 20px;
@@ -146,9 +160,16 @@ section {
   width: 13%;
 }
 
-.apple-watch-description-buttons {
+.apple-watch-description-buttons,
+.macbook-air-description-buttons {
   width: 20%;
   color: #2996FD;
+  font-size: 16px;
+}
+
+.ipad-air-description-buttons {
+  width: 20%;
+  color: #0066CC;
   font-size: 16px;
 }
 
@@ -391,15 +412,11 @@ ul a li:hover {
   display: inline;
 }
 
-.apple-watch-description {
-margin-top: 40px;
-}
-
 #apple-watch-logo {
   width: 10%;
 }
 
-#apple-watch-tagline {
+#apple-watch-tagline, #macbook-air-tagline {
   color: #fff;
   font-size: 18px;
 }
