@@ -53,7 +53,7 @@ nav ul a li:hover {
 /* Grid 1 */
 .grid {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-gap: 12px;
   height: 100vh;
 }
@@ -110,9 +110,9 @@ section {
 
 .iphone-12-pro-description {
   margin-top: 2.5%;
-  width: 12%;
+  width: 14%;
   color: #fff;
-  margin-left: 43.5%;
+  margin-left: 43%;
 }
 
 .apple-fitness-description {
@@ -177,7 +177,7 @@ section {
   background-position: bottom;
   background-size: 50%;
   background-color: #FBFBFD;
-  height: 700px;
+  height: 650px;
 }
 
 #apple-fitness-logo {
@@ -187,10 +187,10 @@ section {
 /* Grid 2 */
 .grid-2 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 11.5px;
   height: auto;
-  margin-top: 62.7vh;
+  margin-top: 64vh;
   padding: 11.5px;
 }
 
@@ -253,7 +253,7 @@ section {
 }
 
 .footer {
-  height: 770px;
+  height: 68vh;
   background-color: #F5F5F7;
 }
 
@@ -342,7 +342,7 @@ ul a li:hover {
 
 .footer-bottom-top-left {
   color: #9A9A9F;
-  margin-right: 526px;
+  margin-right: 440px;
 }
 
 .footer-bottom-top-right {
@@ -357,7 +357,7 @@ ul a li:hover {
 
 .footer-bottom-bottom {
   color: #5E5E61;
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 #footer-links {
