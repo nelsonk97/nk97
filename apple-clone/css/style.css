@@ -284,7 +284,7 @@ ul a li:hover {
   cursor: pointer;
 }
 
-ul a li, li{
+.footer-middle ul a li, li{
   list-style: none;
   font-size: 12.5px;
   color: #58585A;
@@ -326,4 +326,56 @@ ul a li, li{
 
 #tagline-link:hover {
   text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 12.5px;
+}
+
+.footer-bottom-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-bottom-top-left {
+  color: #9A9A9F;
+  margin-right: 526px;
+}
+
+.footer-bottom-top-right {
+  display: flex;
+  margin-left: 15px;
+}
+
+#text-spacer {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.footer-bottom-bottom {
+  color: #5E5E61;
+  margin-left: 15px;
+}
+
+#footer-links {
+  display: inline;
+  text-decoration: none;
+}
+
+.footer-bottom-top-right li:hover,
+.footer-bottom-bottom li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-bottom ul a li,
+.footer-bottom-bottom li {
+  list-style: none;
+  font-size: 12.5px;
+  color: #58585A;
+  padding-bottom: 10px;
+  cursor: pointer;
+  display: inline;
 }
