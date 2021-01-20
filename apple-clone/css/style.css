@@ -93,6 +93,10 @@ section {
   font-size: 28px;
 }
 
+#apple-watch-tagline {
+  font-size: 20px;
+}
+
 #iphone-12-price,
 #iphone-12-pro-price {
   font-size: 16px;
@@ -122,7 +126,8 @@ section {
 
 .iphone-12-description-buttons,
 .iphone-12-pro-description-buttons,
-.apple-fitness-description-buttons {
+.apple-fitness-description-buttons,
+.apple-watch-description-buttons {
   display: flex;
   font-size: 20px;
   margin-top: 20px;
@@ -139,6 +144,12 @@ section {
 
 .apple-fitness-description-buttons {
   width: 13%;
+}
+
+.apple-watch-description-buttons {
+  width: 20%;
+  color: #2996FD;
+  font-size: 16px;
 }
 
 #learn:hover,
@@ -378,4 +389,17 @@ ul a li:hover {
   padding-bottom: 10px;
   cursor: pointer;
   display: inline;
+}
+
+.apple-watch-description {
+margin-top: 40px;
+}
+
+#apple-watch-logo {
+  width: 10%;
+}
+
+#apple-watch-tagline {
+  color: #fff;
+  font-size: 18px;
 }
