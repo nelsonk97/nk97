@@ -87,7 +87,9 @@ section {
   font-weight: 500;
 }
 
-#ipad-air-text,#macbook-air-text {
+#ipad-air-text,
+#macbook-air-text, 
+#airpods-text {
   font-size: 36px;
   font-weight: 500;
 }
@@ -102,9 +104,33 @@ section {
   font-size: 28px;
 }
 
-#apple-watch-tagline, #ipad-air-tagline {
+#apple-watch-tagline, 
+#ipad-air-tagline, 
+#macbook-air-tagline, 
+#apple-one-tagline, 
+#airpods-tagline {
   font-size: 20px;
+  color: #fff;
 }
+
+#ipad-air-tagline, 
+#apple-one-tagline,
+#airpods-tagline {
+  color: #000;
+}
+
+#apple-tv-plus-tagline {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#watch {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+
 
 #iphone-12-price,
 #iphone-12-pro-price {
@@ -131,7 +157,10 @@ section {
 .apple-fitness-description,
 .apple-watch-description,
 .ipad-air-description,
-.macbook-air-description {
+.macbook-air-description,
+.apple-one-description,
+.airpods-description,
+.apple-tv-plus-description {
   margin-top: 4.5%;
   margin-right: 0.5%;
 }
@@ -141,7 +170,9 @@ section {
 .apple-fitness-description-buttons,
 .apple-watch-description-buttons,
 .ipad-air-description-buttons,
-.macbook-air-description-buttons {
+.macbook-air-description-buttons,
+.airpods-description-buttons,
+.apple-one-description-buttons {
   display: flex;
   font-size: 20px;
   margin-top: 20px;
@@ -167,15 +198,25 @@ section {
   font-size: 16px;
 }
 
-.ipad-air-description-buttons {
+.ipad-air-description-buttons, 
+.apple-one-description-buttons, 
+.airpods-description-buttons {
   width: 20%;
   color: #0066CC;
   font-size: 16px;
 }
 
+.apple-tv-plus-description-buttons {
+  color: #fff;
+}
+
+.apple-tv-plus-description-text {
+  margin-top: 25%;
+}
 #learn:hover,
 #buy:hover,
-#try:hover {
+#try:hover,
+#watch:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -185,6 +226,10 @@ section {
   position: relative;
   left: 9px;
   bottom: 1px;
+}
+
+.fas.fa-play-circle {
+  color: #fff;
 }
 
 .iphone-12 {
@@ -212,8 +257,18 @@ section {
   height: 650px;
 }
 
-#apple-fitness-logo {
+#apple-fitness-logo, 
+#apple-watch-logo, 
+#apple-one-logo {
   width: 10%;
+}
+
+#apple-tv-plus-logo {
+  width: 7%;
+}
+
+#apple-tv-plus-log-2 {
+  width: 30%;
 }
 
 /* Grid 2 */
@@ -410,13 +465,4 @@ ul a li:hover {
   padding-bottom: 10px;
   cursor: pointer;
   display: inline;
-}
-
-#apple-watch-logo {
-  width: 10%;
-}
-
-#apple-watch-tagline, #macbook-air-tagline {
-  color: #fff;
-  font-size: 18px;
 }
