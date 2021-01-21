@@ -100,14 +100,13 @@
 
 /* Content */
 .hero {
-  margin-top: 2.8px;
+  margin-top: 108px;
   height: auto;
   width: 100%;
   background-color: #F9F9F9;
 }
 
 .hero-corona {
-  z-index: 1;
   height: 85px;
   width: 100%;
   background-color: #FFF8D9;
@@ -119,6 +118,7 @@
 .hero-corona-content {
   color: #000;
   font-size: 14px;
+  text-align: center;
 }
 
 #hero-corona-text {
@@ -138,7 +138,6 @@
 }
 
 #learn-more {
-  text-align: center;
   text-decoration: none;
   color: #038203;
   font-weight: 700;
@@ -249,6 +248,7 @@
 }
 
 #login {
+  text-align: center;
   padding-top: 6px;
   height: 35px;
   font-size: 16px;
@@ -285,3 +285,5 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* Content */
