@@ -144,7 +144,9 @@
   font-weight: 700;
 }
 
-#learn-more:hover {
+#learn-more:hover,
+#register:hover,
+#security:hover {
   text-decoration: underline;
 }
 
@@ -220,4 +222,66 @@
   margin-top: 75px;
   margin-left: 600px;
   background-color: #DADADA;
+}
+
+.hero-content-right {
+  position: absolute;
+  color: #fff;
+  margin-top: 73px;
+  margin-left: 880px;
+}
+
+.hero-content-min {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hero-content-min p {
+  color: #1A5336;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-content-min i {
+  margin-right: 10px;
+}
+
+#login {
+  padding-top: 6px;
+  height: 35px;
+  font-size: 16px;
+  width: 218px;
+  background-color: var(--td-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#login:hover {
+  background-color: #027a02;
+}
+
+.hero-content-min a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #038203;
+}
+
+.fas.fa-chevron-right {
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+#spacer-2 {
+  background-color: #CCCCCC;
+  width: 94%;
+  height: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
