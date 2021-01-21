@@ -117,7 +117,6 @@
 }
 
 .hero-corona-content {
-  margin-top: -10px;
   color: #000;
   font-size: 14px;
 }
@@ -125,6 +124,7 @@
 #hero-corona-text {
   color: #1A5336;
   font-weight: 700;
+  font-size: 16px;
 }
 
 #hero-help-text {
@@ -151,7 +151,7 @@
 }
 
 .hero-main {
-  height: 354px;
+  height: 350px;
   width: 100%;
   background: url('../img/hero.jpg');
   background-repeat: no-repeat;
