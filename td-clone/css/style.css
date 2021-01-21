@@ -350,6 +350,10 @@
   color: var(--td-color);
 }
 
+.grid-item a:hover {
+  text-decoration: underline;
+}
+
 .grid-item p {
   margin-left: 78px;
   margin-top: 45px;
@@ -360,4 +364,11 @@
 
 .grid-text {
   margin-top: -55px;
+}
+
+.grid-text .fas.fa-chevron-right {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 28px;
+  font-size: 8px;
 }
