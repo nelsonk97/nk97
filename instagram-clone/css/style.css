@@ -5,7 +5,17 @@
 }
 
 .content-area {
+  position: absolute;
+  top: 0;
   background-color: lightblue;
-  height: 833px;
+  height: 929px;
+  width: 100%;
+}
+
+.footer-area {
+  position: absolute;
+  bottom: 0;
+  background-color: lightcoral;
+  height: 151px;
   width: 100%;
 }
