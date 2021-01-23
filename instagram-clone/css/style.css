@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .content {
@@ -72,8 +73,69 @@
 }
 
 #logo {
-  height: 95px;
+  height: 90px;
   width: auto;
+  margin-top: -30px;
+}
+
+input {
+  height: 38px;
+  width: 268px;
+  border: 1px solid #DBDBDB;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 10px;
+  color: #DBDBDB;
+  background-color: #FAFAFA;
+}
+
+#login {
+  height: 30px;
+  width: 268px;
+  text-align: center;
+  background-color: #B2DFFC;
+  margin-top: 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8E8E8E;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 107px;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+
+#facebook,
+#forgot-pw {
+  text-decoration: none;
+}
+
+#facebook {
+  font-size: 14px;
+  color: #4B5F85;
+  margin-bottom: 20px;
+}
+
+#forgot-pw {
+  font-size: 11px;
+  color: #00379B;
 }
 
 .login-middle {
@@ -86,7 +148,6 @@
 
 .login-bottom {
   margin-top: 10px;
-  background-color: #fff;
   width: inherit;
   height: 63px;
   border: 1.17px solid #DBDBDB;
