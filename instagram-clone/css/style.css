@@ -152,3 +152,20 @@ input {
   height: 63px;
   border: 1.17px solid #DBDBDB;
 }
+
+#screenshot-1,
+#screenshot-2,
+#screenshot-3,
+#screenshot-4,
+#screenshot-5 {
+  display: none;
+  position: absolute;
+  right: 383px;
+  top: 92px;
+  height: 404px;
+  width: auto;
+}
+
+#screenshot-1 {
+  display: block;
+}
