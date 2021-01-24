@@ -24,7 +24,6 @@
 .footer-area {
   position: absolute;
   bottom: 0;
-  background-color: lightgreen;
   height: 151px;
   width: 100%;
 }
@@ -208,4 +207,49 @@ input {
 
 .login-bottom img:hover {
   cursor: pointer;
+}
+
+.footer-area {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+}
+
+.footer-content li {
+  list-style-type: none;
+  padding: 3px 8px;
+}
+
+.footer-content a {
+  color: #8E8E8E;
+  text-decoration: none;
+}
+
+.top-list,
+.middle-list,
+.bottom-list {
+  display: flex;
+}
+
+.bottom-list {
+  margin-top: 10px;
+}
+
+.bottom-list .fas.fa-chevron-down {
+  font-size: 9px;
+  margin-top: 7px;
+  margin-right: 10px;
+  color: #8E8E8E;
 }
