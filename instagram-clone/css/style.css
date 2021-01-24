@@ -40,16 +40,35 @@
 
 .content-area-left {
   width: 450px;
+  margin-right: -15px;
 }
 
 .content-area-right {
   height: 500px;
   width: 350px;
+  margin-right: 7px;
 }
 
 #phone-outline {
   width: auto;
   height: 580px;
+}
+
+#screenshot-1,
+#screenshot-2,
+#screenshot-3,
+#screenshot-4,
+#screenshot-5 {
+  display: none;
+  position: absolute;
+  right: 378.7px;
+  top: 92px;
+  height: 404px;
+  width: auto;
+}
+
+#screenshot-1 {
+  display: block;
 }
 
 .login {
@@ -138,34 +157,44 @@ input {
   color: #00379B;
 }
 
-.login-middle {
+.login-middle,
+.login-bottom {
   margin-top: 10px;
   background-color: #fff;
   width: inherit;
   height: 63px;
   border: 1.17px solid #DBDBDB;
+  color: #262626;
+  font-size: 13.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-middle a span {
+  font-weight: 600;
+  color: #00A2F8;
+}
+
+.login-bottom.login-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-bottom {
-  margin-top: 10px;
-  width: inherit;
-  height: 63px;
-  border: 1.17px solid #DBDBDB;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#screenshot-1,
-#screenshot-2,
-#screenshot-3,
-#screenshot-4,
-#screenshot-5 {
-  display: none;
-  position: absolute;
-  right: 383px;
-  top: 92px;
-  height: 404px;
-  width: auto;
-}
-
-#screenshot-1 {
-  display: block;
+img {
+  width: 134px;
+  padding: 2px;
+  margin-top: 15px;
 }
