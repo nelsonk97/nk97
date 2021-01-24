@@ -177,6 +177,10 @@ input {
   color: #00A2F8;
 }
 
+.login-middle a span:hover {
+  cursor: pointer;
+}
+
 .login-bottom.login-buttons {
   display: flex;
   flex-direction: row;
@@ -196,8 +200,12 @@ input {
   background-color: transparent;
 }
 
-img {
+.login-bottom img {
   width: 134px;
   padding: 2px;
   margin-top: 15px;
+}
+
+.login-bottom img:hover {
+  cursor: pointer;
 }
