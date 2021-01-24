@@ -191,6 +191,9 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  border: none;
+  background-color: transparent;
 }
 
 img {
