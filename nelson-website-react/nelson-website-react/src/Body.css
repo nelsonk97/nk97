@@ -3,35 +3,59 @@
   color: #000;
   display: flex;
   align-items: center;
-  overflow: hidden;
   justify-content: center;
-  height: 100vh;
 }
 
 .body__container {
   width: 80%;
+  overflow: hidden;
   height: 100vh;
-  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 0px 5px rgba(0, 0, 0, 0.23);
 }
 
 .body__hero {
-  padding: 50px;
-  height: 300px;
-  color: #90CAF9;
-  background-color: #0D47A1;
+  background-color: #121212;
+  width: 100%;
+  height: inherit;
+  color: #fff;
+  text-align: center;
   display: flex;
-  align-items: left;
+  justify-content: center;
   flex-direction: column;
 }
 
 .body__hero>p {
   margin: 0;
   font-size: 75px;
-  font-weight: 100;
+  font-weight: 200;
   text-transform: lowercase;
 }
 
 .body__catchword {
   font-weight: 500;
-  color: #E3F2FD;
+  color: #00E5FF;
+}
+
+.body__section {
+  padding: 50px 0px;
+  height: inherit;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: 6px solid #FFD600;
+}
+
+.body__card {
+  height: 350px;
+  width: 450px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.body__card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
