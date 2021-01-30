@@ -7,15 +7,11 @@ function Body() {
   return (
     <div className="body">
       <div className="body__hero">
-        <div className="body__hero-left">
-          <p>introducing nelson.</p>
-          <p>junior full stack developer.</p>
-          <p>fanshawe grad.</p>
-          <p>web dev intern.</p>
-        </div>
-        <div className="body__hero-right"></div>
+          <p id="tagline">introducing <span className="hero-tag">nelson.</span></p>
+          <p><span className="hero-tag">junior full stack</span> developer.</p>
+          <p><span className="hero-tag">fanshawe</span> grad.</p>
+          <p><span className="hero-tag">web dev</span> intern.</p>
       </div>
-      <div className="body__section"></div>
       <div className="body__section"></div>
     </div>
   )
