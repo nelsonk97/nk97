@@ -19,3 +19,5 @@ Welcome to my repo! If you found yourself here, I must have applied to your comp
 - Virtual machines
 
 Being taught primarily as a back-end developer, I have been making substanstial strides into becoming a well-rounded full stack developer. I have been putting more effort into learning front-end technologies such as React, and I have no signs of stopping!
+
+Since I graduated in April 2020, despite there having been setbacks, I never stopped learning. I firmly believe in continuing to learn even when you're done school. In our industry, it's always evolving. And that's what makes it fun.
