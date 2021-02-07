@@ -1,0 +1,31 @@
+.screenshot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  flex-basis: 0px;
+  flex-grow: 1;
+}
+
+.screenshot > img {
+  margin: 5px 10px 10px 10px;
+  width: 480px;
+  transition: transform 100ms ease-in;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.screenshot:hover > img {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .screenshot > img {
+    width: 400px;
+  }
+
+  .screenshot:hover > img {
+    transform: none;
+  }
+}
