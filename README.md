@@ -6,6 +6,7 @@ Welcome to my repo! If you found yourself here, I must have applied to your comp
 - Node.js
 - React.js
 - Command line
+- cPanel
 - Microsoft Azure
 - Amazon Web Services
 - LAMP stack
