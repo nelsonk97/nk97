@@ -1,6 +1,4 @@
-# nk97
-School work and projects
-
+# Nelson's school work & projects
 Welcome to my repo! If you found yourself here, I must have applied to your company recently and you're aware I am a recent graduate and I have internship experience. My skills I am comfortable with are as follows:
 - HTML, CSS, JavaScript
 - MySQL
