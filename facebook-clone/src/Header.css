@@ -38,10 +38,10 @@
 }
 
 .header__center {
-  margin-left: 50px;
   display: flex;
   flex: 1;
   justify-content: center;
+  margin-right: 5vw;
 }
 
 .header__option > .MuiSvgIcon-root {
