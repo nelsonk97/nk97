@@ -2,6 +2,7 @@ import React from "react";
 import "./Work.css";
 import Screenshot from "./Screenshot";
 import Apple from "./sc-apple.png";
+import Crypto from "./sc-bootsAndCats.png";
 import Facebook from "./sc-facebook.png";
 import TDBank from "./sc-td.png";
 import Tesla from "./sc-tesla.png";
@@ -17,6 +18,11 @@ function Work() {
             <p className="work-title">Show &amp; Tell</p>
           </div>
           <div className="work__content-bottom">
+            <Screenshot
+              className="screenshot"
+              image={Crypto}
+              title="Cryptocurrency app"
+            />
             <Screenshot
               className="screenshot"
               image={Apple}
