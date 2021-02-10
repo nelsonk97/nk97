@@ -1,9 +1,15 @@
+h1 {
+  color: white;
+  padding: 20px;
+}
+
 .coin__row {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .coin__image > img {
@@ -12,13 +18,13 @@
 
 .coin__image > h1 {
   font-size: 24px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .coin__data {
   margin-left: 50px;
   text-align: left;
-  width: 250px;
+  width: 300px;
 }
 
 .coin__image {
@@ -29,13 +35,14 @@
 }
 
 .coin__symbol {
-  color: rgb(0, 174, 255);
-  font-weight: 400;
+  color: rgb(85, 159, 194);
+  font-weight: 300;
 }
 
 .coin__data > p {
-  color: rgb(11, 170, 5);
-  font-weight: 300;
+  color: lightslategray;
+  font-weight: 400;
+  padding: 2px;
 }
 
 center {

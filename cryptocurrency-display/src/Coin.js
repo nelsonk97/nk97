@@ -1,17 +1,11 @@
 import React from "react";
 import "./Coin.css";
-import Moment from "react-moment";
-import "moment-timezone";
-
-const dateToFormat = new Date();
 
 const Coin = ({ coins }) => {
   return (
     <div>
       <center>
         <h1>boots and cats</h1>
-        <p>data accurate as of </p>
-        <Moment>{dateToFormat}</Moment>
       </center>
       {coins.map((coin) => (
         <div className="coin">
@@ -23,13 +17,35 @@ const Coin = ({ coins }) => {
             </div>
             <div className="coin__data">
               <p className="coin__price">
-                Price: ${coin.current_price.toLocaleString()}
+                <span style={{ color: "white", fontWeight: "500" }}>
+                  Price:{" "}
+                </span>
+                ${coin.current_price.toLocaleString()}
+                {coin.vs_currency}
               </p>
               <p className="coin__volume">
-                Volume: ${coin.total_volume.toLocaleString()}
+                <span style={{ color: "white", fontWeight: "500" }}>
+                  Total Volume:{" "}
+                </span>
+                ${coin.total_volume.toLocaleString()} CAD
               </p>
               <p className="coin__marketCap">
-                Market Cap: ${coin.market_cap.toLocaleString()}
+                <span style={{ color: "white", fontWeight: "500" }}>
+                  Market Cap:{" "}
+                </span>
+                ${coin.market_cap.toLocaleString()} CAD
+              </p>
+              <p className="coin__circulatingSupply">
+                <span style={{ color: "white", fontWeight: "500" }}>
+                  Circulating Supply:{" "}
+                </span>
+                {coin.circulating_supply.toLocaleString()}
+              </p>
+              <p className="coin__lastUpdated">
+                <span style={{ color: "white", fontWeight: "500" }}>
+                  Last Updated:{" "}
+                </span>
+                {coin.last_updated}
               </p>
             </div>
           </div>
