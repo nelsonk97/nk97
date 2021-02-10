@@ -1,0 +1,43 @@
+.coin__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.coin__image > img {
+  width: 50px;
+}
+
+.coin__image > h1 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.coin__data {
+  margin-left: 50px;
+  text-align: left;
+  width: 250px;
+}
+
+.coin__image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.coin__symbol {
+  color: rgb(0, 174, 255);
+  font-weight: 400;
+}
+
+.coin__data > p {
+  color: rgb(11, 170, 5);
+  font-weight: 300;
+}
+
+center {
+  font-weight: 500;
+}
