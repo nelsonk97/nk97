@@ -1,0 +1,46 @@
+.hero {
+  width: 75vw;
+}
+
+.hero__text > p:first-child {
+  text-transform: uppercase;
+  color: white;
+  position: fixed;
+  top: 11%;
+  left: 17.5%;
+  font-size: 4rem;
+  font-weight: 600;
+  width: 800px;
+  height: 800px;
+}
+
+.hero__text > p:last-child {
+  text-transform: uppercase;
+  color: white;
+  position: fixed;
+  top: 26.5%;
+  left: 17.5%;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 280px;
+}
+
+.hero > button {
+  text-transform: uppercase;
+  color: white;
+  position: fixed;
+  top: 34%;
+  left: 17.5%;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 175px;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hero > button:hover {
+  background-color: white;
+  color: black;
+}
