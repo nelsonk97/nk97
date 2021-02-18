@@ -22,36 +22,43 @@ function Work() {
               className="screenshot"
               image={Crypto}
               title="Cryptocurrency app"
+              alt="Cryptocurrency app"
             />
             <Screenshot
               className="screenshot"
               image={Apple}
               title="Apple clone"
+              alt="Apple clone"
             />
             <Screenshot
               className="screenshot"
               image={Facebook}
               title="Facebook clone"
+              alt="Facebook clone"
             />
             <Screenshot
               className="screenshot"
               image={Tesla}
               title="Tesla clone"
+              alt="Tesla clone"
             />
             <Screenshot
               className="screenshot"
               image={TDBank}
               title="TD clone"
+              alt="TD clone"
             />
             <Screenshot
               className="screenshot"
               image={Instagram}
               title="Instagram clone"
+              alt="Instagram clone"
             />
             <Screenshot
               className="screenshot"
               image={YouTube}
               title="YouTube clone"
+              alt="YouTube clone"
             />
           </div>
         </div>
