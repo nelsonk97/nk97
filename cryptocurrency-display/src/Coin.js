@@ -2,6 +2,8 @@ import React from "react";
 import "./Coin.css";
 
 const Coin = ({ coins }) => {
+  var nf = new Intl.NumberFormat();
+
   return (
     <div>
       <center>
@@ -27,7 +29,7 @@ const Coin = ({ coins }) => {
                 <span style={{ color: "white", fontWeight: "500" }}>
                   Total Volume:{" "}
                 </span>
-                ${coin.total_volume.toLocaleString()} CAD
+                {nf.format(coin.total_volume)}
               </p>
               <p className="coin__marketCap">
                 <span style={{ color: "white", fontWeight: "500" }}>

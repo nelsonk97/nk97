@@ -9,7 +9,7 @@ h1 {
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #dc453d;
 }
 
 .coin__image > img {
@@ -35,12 +35,12 @@ h1 {
 }
 
 .coin__symbol {
-  color: rgb(85, 159, 194);
-  font-weight: 300;
+  color: #a1321e;
+  font-weight: 500;
 }
 
 .coin__data > p {
-  color: lightslategray;
+  color: #a1321e;
   font-weight: 400;
   padding: 2px;
 }
